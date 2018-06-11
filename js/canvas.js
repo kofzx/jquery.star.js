@@ -75,8 +75,8 @@
         ctx.save();
         ctx.drawImage(starPic, this.x, this.y, this.scale, this.scale);
         // 添加颜色
-        ctx.globalCompositeOperation = "source-atop";
-        ctx.globalAlpha = 0.6;
+        ctx.globalCompositeOperation = "source-over";
+        // ctx.globalAlpha = 0.6;
         ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.scale, this.scale);
         ctx.restore();
